@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "8a27b4b8-749a-4384-a2b6-0658ad671207",
+		"name": "twitter api ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get statuses/oembed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://publish.twitter.com/oembed?url=https://twitter.com/uaegean/status/844503314716934145",
+					"protocol": "https",
+					"host": [
+						"publish",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"oembed"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://twitter.com/uaegean/status/844503314716934145"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
